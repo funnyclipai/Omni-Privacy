@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Privacy Policy - Omni Notes</title>
+  <meta name="description" content="Privacy Policy for Omni Notes">
+
+  <style>
+    :root {
+      --primary: #6c4cff;
+      --primary2: #9b4dff;
+      --text: #172033;
+      --muted: #667085;
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --border: #e7e9ef;
+      --soft: #f0edff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at top left, rgba(108,76,255,.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(155,77,255,.25), transparent 30%),
+        linear-gradient(135deg, #11182d, #17113a 55%, #211447);
+      color: white;
+      padding: 70px 20px 85px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 78px;
+      height: 78px;
+      margin: 0 auto 22px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #426cff, #a63dff);
+      box-shadow: 0 15px 45px rgba(108, 76, 255, .35);
+      font-size: 38px;
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -1px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg, #ffffff, #b993ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #d8dcf0;
+      font-size: 17px;
+    }
+
+    .updated {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.15);
+      color: #e8eaff;
+      font-size: 14px;
+    }
+
+    .container {
+      width: min(100% - 32px, 1050px);
+      margin: -35px auto 60px;
+      position: relative;
+    }
+
+    .content {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(24px, 5vw, 55px);
+      box-shadow: 0 20px 60px rgba(16, 24, 40, .08);
+    }
+
+    .intro {
+      background: var(--soft);
+      border-left: 4px solid var(--primary);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 35px;
+      color: #3c4260;
+    }
+
+    .toc {
+      background: #fafaff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 40px;
+    }
+
+    .toc h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+      display: block;
+      padding: 5px 0;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 42px;
+      scroll-margin-top: 25px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: clamp(23px, 4vw, 30px);
+      line-height: 1.3;
+      margin-bottom: 15px;
+      color: #141a2a;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 25px;
+      background: linear-gradient(180deg, var(--primary), var(--primary2));
+      border-radius: 10px;
+      margin-right: 10px;
+      vertical-align: -3px;
+    }
+
+    h3 {
+      font-size: 19px;
+      margin: 22px 0 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #475467;
+    }
+
+    ul {
+      padding-left: 23px;
+      margin: 12px 0 18px;
+    }
+
+    li {
+      margin-bottom: 9px;
+      color: #475467;
+    }
+
+    strong {
+      color: #20283a;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin: 20px 0;
+    }
+
+    .info-card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .info-card strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .highlight {
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: #f7f5ff;
+      border: 1px solid #e5ddff;
+      margin: 18px 0;
+    }
+
+    .contact {
+      background:
+        linear-gradient(135deg, #171d35, #24164b);
+      color: white;
+      border-radius: 18px;
+      padding: 25px;
+    }
+
+    .contact h2,
+    .contact p,
+    .contact strong {
+      color: white;
+    }
+
+    .contact h2::before {
+      background: white;
+    }
+
+    .contact a {
+      color: #d9c7ff;
+      font-weight: 700;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px 45px;
+      color: #7a8192;
+      font-size: 14px;
+    }
+
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 650px) {
+      .hero {
+        padding: 50px 18px 70px;
+      }
+
+      .container {
+        width: min(100% - 20px, 1050px);
+        margin-top: -25px;
+      }
+
+      .content {
+        border-radius: 18px;
+        padding: 23px 18px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h2::before {
+        height: 21px;
+        width: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="logo">O</div>
+
+    <h1><span>Omni Notes</span><br>Privacy Policy</h1>
+
+    <p>
+      Your privacy matters to us. This Privacy Policy explains how
+      Omni Notes may collect, use, store, and protect information
+      when you use our application.
+    </p>
+
+    <div class="updated">
+      Last Updated: September 20, 2026
+    </div>
+  </header>
+
+
+  <main class="container">
+    <article class="content">
+
+      <div class="intro">
+        <strong>Important:</strong>
+        Please read this Privacy Policy carefully before using Omni Notes.
+        By using the application, you acknowledge that you have read and
+        understood this Privacy Policy.
+      </div>
+
+
+      <!-- TABLE OF CONTENTS -->
+      <div class="toc">
+        <h3>Quick Navigation</h3>
+
+        <a href="#introduction">1. Introduction</a>
+        <a href="#information">2. Information We May Collect</a>
+        <a href="#notes">3. Your Notes and Content</a>
+        <a href="#permissions">4. App Permissions</a>
+        <a href="#usage">5. How We Use Information</a>
+        <a href="#storage">6. Data Storage and Security</a>
+        <a href="#thirdparty">7. Third-Party Services</a>
+        <a href="#ads">8. Advertising</a>
+        <a href="#analytics">9. Analytics</a>
+        <a href="#sharing">10. Sharing of Information</a>
+        <a href="#retention">11. Data Retention</a>
+        <a href="#deletion">12. Data Deletion</a>
+        <a href="#children">13. Children's Privacy</a>
+        <a href="#security">14. Security</a>
+        <a href="#changes">15. Changes to This Policy</a>
+        <a href="#contact">16. Contact Us</a>
+      </div>
+
+
+      <!-- 1 -->
+      <section id="introduction">
+        <h2>Introduction</h2>
+
+        <p>
+          Welcome to <strong>Omni Notes</strong>. Omni Notes is a
+          note-taking and productivity application designed to help
+          users create, organize, manage, and access their personal
+          notes and related content.
+        </p>
+
+        <p>
+          This Privacy Policy explains what information may be processed
+          when you use Omni Notes and how that information may be handled.
+        </p>
+
+        <p>
+          For the purposes of this Privacy Policy, "Omni Notes",
+          "we", "us", or "our" refers to the developer or publisher
+          responsible for the application.
+        </p>
+      </section>
+
+
+      <!-- 2 -->
+      <section id="information">
+        <h2>Information We May Collect</h2>
+
+        <p>
+          Depending on the features you use, Omni Notes may process
+          different categories of information.
+        </p>
+
+        <h3>Information You Provide</h3>
+
+        <ul>
+          <li>Notes, text, titles, checklists, and other content you create.</li>
+          <li>Images or photographs that you choose to attach to notes.</li>
+          <li>Voice recordings or audio content that you choose to create.</li>
+          <li>Folders, categories, tags, colors, and other organizational data.</li>
+          <li>Account information if account-based features are enabled.</li>
+          <li>Information you provide when contacting our support team.</li>
+        </ul>
+
+        <h3>Device and Technical Information</h3>
+
+        <p>
+          Depending on the services and permissions enabled in the app,
+          certain technical information may be processed, such as:
+        </p>
+
+        <ul>
+          <li>Device model and operating system version.</li>
+          <li>Application version.</li>
+          <li>Basic diagnostic or crash information.</li>
+          <li>General app interaction information.</li>
+          <li>IP address or approximate location information where required by certain third-party services.</li>
+        </ul>
+
+        <p>
+          Omni Notes does not intentionally request sensitive personal
+          information unless it is necessary for a specific feature and
+          you voluntarily provide it.
+        </p>
+      </section>
+
+
+      <!-- 3 -->
+      <section id="notes">
+        <h2>Your Notes and Content</h2>
+
+        <p>
+          The content you create inside Omni Notes may include personal
+          information because notes are created by you.
+        </p>
+
+        <p>
+          This may include text, tasks, checklists, images, audio
+          recordings, drawings, tags, folders, and other content depending
+          on the features available in the application.
+        </p>
+
+        <div class="highlight">
+          <strong>Your content belongs to you.</strong>
+          You are responsible for the information you choose to store
+          inside your notes and for ensuring that your notes do not contain
+          information that you do not have permission to store or share.
+        </div>
+
+        <p>
+          If Omni Notes provides cloud synchronization or account-based
+          backup, your selected content may be transmitted to the relevant
+          backend service so that synchronization and backup features can
+          operate.
+        </p>
+      </section>
+
+
+      <!-- 4 -->
+      <section id="permissions">
+        <h2>App Permissions</h2>
+
+        <p>
+          Omni Notes may request certain Android permissions when required
+          for features you choose to use.
+        </p>
+
+        <div class="info-grid">
+
+          <div class="info-card">
+            <strong>Photos / Media</strong>
+            Used when you choose to select or attach images or media
+            to your notes.
+          </div>
+
+          <div class="info-card">
+            <strong>Microphone</strong>
+            Used only when you choose to create or record voice notes.
+          </div>
+
+          <div class="info-card">
+            <strong>Notifications</strong>
+            May be used for reminders, updates, or other notification
+            features if enabled.
+          </div>
+
+          <div class="info-card">
+            <strong>Internet</strong>
+            May be required for synchronization, updates, analytics,
+            advertisements, or other online features.
+          </div>
+
+        </div>
+
+        <p>
+          You can manage supported permissions through your Android
+          device settings. Disabling a permission may prevent the
+          corresponding feature from working correctly.
+        </p>
+      </section>
+
+
+      <!-- 5 -->
+      <section id="usage">
+        <h2>How We Use Information</h2>
+
+        <p>
+          Information processed through Omni Notes may be used for the
+          following purposes:
+        </p>
+
+        <ul>
+          <li>To provide and operate the application's features.</li>
+          <li>To save and display your notes and content.</li>
+          <li>To provide synchronization or backup features where available.</li>
+          <li>To provide reminders and notifications when enabled.</li>
+          <li>To improve application performance and reliability.</li>
+          <li>To diagnose crashes, bugs, and technical problems.</li>
+          <li>To protect the application against abuse or unauthorized activity.</li>
+          <li>To provide customer support.</li>
+          <li>To display advertisements if advertising is enabled.</li>
+          <li>To understand general application usage and improve the user experience.</li>
+        </ul>
+      </section>
+
+
+      <!-- 6 -->
+      <section id="storage">
+        <h2>Data Storage and Security</h2>
+
+        <p>
+          Omni Notes may store information locally on your device and,
+          where applicable, on secure servers or third-party infrastructure
+          used to provide online features.
+        </p>
+
+        <p>
+          We take reasonable technical and organizational measures to
+          protect information from unauthorized access, alteration,
+          disclosure, or destruction.
+        </p>
+
+        <p>
+          However, no electronic storage system, internet transmission,
+          or application can be guaranteed to be completely secure.
+          Therefore, we cannot guarantee absolute security of your data.
+        </p>
+
+        <div class="highlight">
+          <strong>Backup recommendation:</strong>
+          If Omni Notes provides export or backup functionality, we
+          recommend maintaining your own backup of important notes and
+          personal content.
+        </div>
+      </section>
+
+
+      <!-- 7 -->
+      <section id="thirdparty">
+        <h2>Third-Party Services</h2>
+
+        <p>
+          Omni Notes may use third-party services to provide certain
+          functionality, including hosting, authentication, cloud storage,
+          analytics, crash reporting, notifications, or advertising.
+        </p>
+
+        <p>
+          These third-party providers may process certain information
+          according to their own privacy policies and terms.
+        </p>
+
+        <p>
+          Examples of third-party services that may be used include
+          Google Play Services, Firebase, Google Analytics for Firebase,
+          Firebase Crashlytics, Google AdMob, or other services required
+          by the application.
+        </p>
+
+        <p>
+          Only services actually integrated into the released version of
+          Omni Notes should be considered applicable.
+        </p>
+      </section>
+
+
+      <!-- 8 -->
+      <section id="ads">
+        <h2>Advertising</h2>
+
+        <p>
+          If advertising is enabled in Omni Notes, advertisements may be
+          provided by third-party advertising providers such as Google
+          AdMob.
+        </p>
+
+        <p>
+          Advertising providers may process information such as advertising
+          identifiers, device information, approximate location, and
+          interaction information in accordance with their own policies.
+        </p>
+
+        <p>
+          Advertising practices may vary depending on your device,
+          region, consent choices, and the advertising configuration
+          used by the application.
+        </p>
+
+        <p>
+          If Omni Notes does not display advertisements in the version
+          you are using, this section does not apply to your use of those
+          advertising features.
+        </p>
+      </section>
+
+
+      <!-- 9 -->
+      <section id="analytics">
+        <h2>Analytics</h2>
+
+        <p>
+          Omni Notes may use analytics or diagnostic tools to understand
+          application performance and improve the user experience.
+        </p>
+
+        <p>
+          Such information may include general usage events, application
+          version, device information, crash information, and performance
+          data.
+        </p>
+
+        <p>
+          Analytics information is intended to help us identify bugs,
+          improve features, understand general usage patterns, and
+          maintain application stability.
+        </p>
+      </section>
+
+
+      <!-- 10 -->
+      <section id="sharing">
+        <h2>Sharing of Information</h2>
+
+        <p>
+          We do not sell your personal information.
+        </p>
+
+        <p>
+          Information may be shared or processed only when reasonably
+          necessary to operate Omni Notes, provide requested features,
+          maintain technical infrastructure, comply with legal obligations,
+          or protect the security and rights of users and the service.
+        </p>
+
+        <p>
+          Third-party service providers may receive limited information
+          necessary to perform services on our behalf.
+        </p>
+      </section>
+
+
+      <!-- 11 -->
+      <section id="retention">
+        <h2>Data Retention</h2>
+
+        <p>
+          Information may be retained for as long as reasonably necessary
+          to provide the requested services, maintain application
+          functionality, comply with legal obligations, resolve disputes,
+          enforce agreements, and maintain security.
+        </p>
+
+        <p>
+          Information stored locally on your device generally remains
+          there until you delete it, clear the application data, uninstall
+          the application, or otherwise remove it through available
+          application features.
+        </p>
+      </section>
+
+
+      <!-- 12 -->
+      <section id="deletion">
+        <h2>Data Deletion</h2>
+
+        <p>
+          You may delete notes and other content using the available
+          features inside Omni Notes.
+        </p>
+
+        <p>
+          If Omni Notes provides an account or cloud-based service,
+          you may request deletion of your account and associated data
+          by contacting us.
+        </p>
+
+        <p>
+          Some information may need to be retained where required by law,
+          for legitimate security purposes, or where necessary to resolve
+          disputes and prevent abuse.
+        </p>
+
+        <div class="highlight">
+          <strong>Data deletion request:</strong>
+          Contact us using the email address provided at the bottom of
+          this Privacy Policy and include enough information for us to
+          identify your request.
+        </div>
+      </section>
+
+
+      <!-- 13 -->
+      <section id="children">
+        <h2>Children's Privacy</h2>
+
+        <p>
+          Omni Notes is not intended to knowingly collect personal
+          information from children in violation of applicable laws.
+        </p>
+
+        <p>
+          If you believe that a child has provided personal information
+          through the application without appropriate consent, please
+          contact us so that we can review and take appropriate action.
+        </p>
+      </section>
+
+
+      <!-- 14 -->
+      <section id="security">
+        <h2>Security</h2>
+
+        <p>
+          We take reasonable steps to protect information handled by
+          Omni Notes. However, you should understand that no method of
+          electronic transmission or storage is completely secure.
+        </p>
+
+        <p>
+          You are also responsible for protecting access to your device,
+          account credentials, and any backup or synchronization account
+          connected to Omni Notes.
+        </p>
+      </section>
+
+
+      <!-- 15 -->
+      <section id="changes">
+        <h2>Changes to This Privacy Policy</h2>
+
+        <p>
+          We may update this Privacy Policy from time to time to reflect
+          changes in the application, technology, legal requirements,
+          or our practices.
+        </p>
+
+        <p>
+          When changes are made, the updated policy will be published on
+          this page and the "Last Updated" date will be changed accordingly.
+        </p>
+
+        <p>
+          We encourage you to review this Privacy Policy periodically.
+        </p>
+      </section>
+
+
+      <!-- 16 -->
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <p>
+          If you have questions, concerns, requests, or feedback regarding
+          this Privacy Policy or Omni Notes, you can contact us using the
+          information below.
+        </p>
+
+        <p>
+          <strong>App:</strong> Omni Notes
+        </p>
+
+        <p>
+          <strong>Developer / Company:</strong>
+          Zabi.dev
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto: ffvpubg420@gmail.com">ffvpubg420@gmail.com</a>
+        </p>
+
+        <p>
+          <strong>Country:</strong>
+          Pakistan
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+    <p>
+      © 2026 Omni Notes. All rights reserved.
+    </p>
+
+    <p>
+      This Privacy Policy applies to the Omni Notes application and
+      related services.
+    </p>
+  </footer>
+
+</body>
+</html>
